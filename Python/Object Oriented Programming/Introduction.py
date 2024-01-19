@@ -64,10 +64,11 @@ class Item:
 
 class Phone(Item ):
     all=[]
+    
     def __init__(self, name: str, price: float, quantity=0, broken_phones=0):
         # Call to super function to have access to all attributes/methods
         super().__init__(
-            
+            name, price, quantity 
         )
         #Run Validation to the received arguments
         
@@ -87,5 +88,5 @@ print(phone1.calculate_total_price())
 
 phone2 = Phone("jscpjonev20",700,5,2)
 
-phone3 =Phone("jscv30",700,7)
+
 
