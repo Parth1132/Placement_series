@@ -22,7 +22,7 @@ class Item:
         Item.all.append(self)
         
     @property
-    # Property Decorator
+    # Property Decorator = Read-Only Attribute
     def name(self):
             return self.__name
     
